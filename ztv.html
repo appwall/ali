@@ -1,0 +1,94 @@
+<!-- ЕЩЕ И ПЛАНШЕТЫ -->
+<html>
+    <head>
+         <title>Установка приложения</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/mobile-detect.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+
+        <script type="text/javascript">
+            var md = new MobileDetect(window.navigator.userAgent);
+            var channel = 'ZebrailTV';
+            var iphonelink = 'https://appwall.go2affise.com/click?pid=235&offer_id=29';
+            var ipadlink = 'https://appwall.go2affise.com/click?pid=235&offer_id=29';
+            var androidlink = 'https://appwall.go2affise.com/click?pid=235&offer_id=30';
+            if (md.mobile()) {
+                if (md.phone()=='iPhone') {
+                    window.location.href = iphonelink;
+                }
+                if (md.tablet()=='iPad') {
+                    window.location.href = ipadlink;
+                }
+                if (md.os()=='AndroidOS') {
+                    window.location.href = androidlink;
+                }
+            }                
+    
+            function gplay() {
+                window.location.href = androidlink;
+            }
+            function appstore() {
+                window.location.href = iphonelink;
+            }
+    </script>
+         <style>
+             .right { text-align: right; z-index: 1; position: relative; }
+             .text { z-index: 2; position: absolute; font-size: 27px; font-family: sans-serif; width: 70%; }
+             .frame { opacity: 0; }    
+             div {opacity: 1;}
+        </style>
+        <style>
+html {
+  font-family: sans-serif;
+ 
+    }
+body {
+  margin: 0;
+     color: #000;
+  background-color: #f1f1f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;    
+ 
+}
+    </style>
+ 
+
+        
+        <script src="https://use.fontawesome.com/63adbfa468.js"></script>
+      
+    </head>
+    <body  >        
+               
+        <header class="intro" id="web">
+        <div class="intro-body">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                       <h1 align="center"><img src="ali2.png"></h1><br>
+                        <h2 class="brand-heading" style="color:#000;font-size:35px;" align="center">Еще нет приложения Aliexpress?<br><br></h2>
+                        <p style="color:#000;font-size:30px;text-align:center;">
+                        <script type="text/javascript">
+                                var href = window.location.host+window.location.pathname;
+                                document.write(href);
+                        </script>
+                        </p>
+                        <p style="color:#000;text-align:center;font-size:20px;">откройте эту страницу на смартфоне или планшете,<br> установите приложение и получайте бонусы каждый день!</p>
+                        
+
+                        </a>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2" ><br>
+                        <p style="color:#000;text-align:center;"><img src="ali1.png"></p>
+                
+                </div>
+
+                </div>
+            </div>
+        </div>
+        </header>
+     
+       
+    </body>
+</html>
